@@ -1,0 +1,16 @@
+h1{
+    color: #333333;
+
+}
+
+header{
+    margin-left: 100px;
+}
+
+.bio{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+    color: #333333;
+    margin: 100px;
+
+}
