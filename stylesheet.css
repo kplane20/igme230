@@ -1,16 +1,62 @@
 h1{
-    color: #333333;
+    color: #ffffff;
+     float:left;
+    margin-right: 100px;
 
 }
 
-header{
+.header{
     margin-left: 100px;
+    max-width: 500px;
+    color: #ffffff;
+    margin-right: 250px;
+    float:left;
+    clear: both;
+    box-sizing: border-box;
+
 }
 
-.bio{
-    font-family: 'Open Sans', sans-serif;
-    max-width: 500px;
-    color: #333333;
-    margin: 100px;
+.wrapperHeader{
+    margin-left: 0;
+    position: relative;
+   
+}
 
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 50px;
+    background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+    
+}
+
+.info{
+    margin-left: 0px;
+    float: left;
+}
+
+
+.links{
+    box-sizing: border-box;
+}
+
+.column {
+    float: right;
+    width: 22%;
+    padding-top: 50px;
+    padding-right: 150px;
+    line-height: 1.5;
+    box-sizing: border-box;
+
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float:right;
+    line-height: 1.5;
+    box-sizing: border-box;
+   
 }
