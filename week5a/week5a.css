@@ -1,24 +1,18 @@
+*{box-sizing: border-box};
+
+header, article, aside{
+    width: 100%;
+}
 header{
-    box-sizing: border-box;
-    width: 100%;
     background-color: #e5e5e5;
-    padding: 80px;
+    padding: 8px;
 }
 
-article{
-    width: 100%;
-}
-
-h1{
-    text-align: center;
-}
-
-h2{
+h1, h2, nav{
     text-align: center;
 }
 
 nav{
-    text-align: center;
     overflow: auto;
 }
 
@@ -27,11 +21,12 @@ img{
 }
 
 h3, nav a{
+    background-color: #e5e5e5;
     padding: 8px;
     margin-top: 7px;
     width: 100%;
     display: block;
-    background-color: #e5e5e5;
+   
 }
 
 aside{
