@@ -43,7 +43,7 @@ aside, nav{
 }
 
 article{
-    float: left;
+    float: right;
     width: 60%;
     padding: 0, 20px;
 }
