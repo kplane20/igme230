@@ -1,6 +1,8 @@
 header{
     box-sizing: border-box;
     width: 100%;
+    background-color: #e5e5e5;
+    padding: 80px;
 }
 
 article{
