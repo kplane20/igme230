@@ -2,7 +2,7 @@ header{
     box-sizing: border-box;
     width: 100%;
     background-color: #e5e5e5;
-    padding: 80px, 80px, 80px, 80px;
+    padding: 80px;
 }
 
 article{
@@ -31,6 +31,7 @@ h3, nav a{
     margin-top: 7px;
     width: 100%;
     display: block;
+    background-color: #e5e5e5;
 }
 
 @media screen and (min-width: 620px){
@@ -38,6 +39,9 @@ h3, nav a{
 aside, nav{
     float: left;
     width: 20%;
+    background-color: #e5e5e5;
+    padding: 15px;
+    margin-top: 7px;
 }
 
 article{
