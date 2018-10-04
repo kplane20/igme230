@@ -43,7 +43,6 @@ main{
     /* provides space on either side */
     max-width: 95vw;
     margin: .5rem auto;
-
 }
 
 img{
@@ -52,7 +51,6 @@ img{
     width: 100%;
     border:2px solid black;
     border-radius: 5px;
-
 }
 
 @supports (display: grid) {
