@@ -5,7 +5,11 @@ padding-left: 2%;
 font-size: .8em;
 }
 
-
+h3{
+    float:right;
+    margin-top: 0;
+    padding-top:0;
+}
 
 
 /**************
@@ -15,7 +19,7 @@ Grid Formatting
 main{
     /* creates grid columns and resizes images to fill column */
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(530px, 1fr));
     grid-gap:.1rem;
     /* provides space on either side */
     max-width: 95vw;
