@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width= "500" height= "500">
+    
+    <rect width="90" height="90" x="5%" y="5%" fill="pink"/>
+</svg>
