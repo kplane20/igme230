@@ -27,7 +27,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin-left: 50px;
     background: #eab0b0;
-    font-size: 5%;
     
 }
 
@@ -48,6 +47,7 @@ body{
     padding-right: 150px;
     line-height: 1.5;
     box-sizing: border-box;
+    font-size: 1em;
 
 }
 
