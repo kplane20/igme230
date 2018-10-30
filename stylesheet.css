@@ -2,6 +2,7 @@ h1{
     color: #333333;
      float:left;
     margin-right: 100px;
+    font-size: 2em;
 
 }
 
@@ -9,10 +10,11 @@ h1{
     margin-left: 100px;
     max-width: 500px;
     color: #333333;
-    margin-right: 250px;
+    margin-right: 200px;
     float:left;
     clear: both;
     box-sizing: border-box;
+    font-size: 1.5em;
 
 }
 
@@ -27,7 +29,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin-left: 50px;
     background: #eab0b0;
-    font-size: 5%;
+    font-size: 1em;
     
 }
 
