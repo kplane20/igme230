@@ -65,9 +65,17 @@ p {
 .left{
     float: left;
     margin-left: 50px;
+    width: 100%;
+    min-width: 50px;
+    box-sizing: border-box;
 }
 
 .right{
     float: right;
-    margin-right: 55%;
+    margin-right: 40%;
+    margin-left: 60%;
+    padding-left: 50%;
+    min-width: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
