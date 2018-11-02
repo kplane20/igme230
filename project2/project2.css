@@ -14,6 +14,7 @@ h3{
 
 .tab {
     overflow: hidden;
+    font-size: 8%;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -25,7 +26,7 @@ h3{
     /* cursor: pointer; */
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 3%;
+    font-size: 8%;
 }
 
 /* Change background color of buttons on hover */
@@ -44,7 +45,7 @@ h3{
     display: none;
     padding: 6px 12px;
     border-top: none;
-    font-size: 3%;
+    font-size: 8%;
     padding-right: 20%;
 }
 
