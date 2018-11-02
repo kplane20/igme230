@@ -38,43 +38,6 @@ h3{
     color: white;
 }
 
-/* .tab {
-    overflow: hidden;
-    font-size: 8%;
-}
-
-/* Style the buttons that are used to open the tab content */
-/* .tab button {
-    background-color: #ffffff;
-    float: right;
-    border: none;
-    outline: none;
-    /* cursor: pointer; */
-    /* padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 8%;
-    padding-right: 20%;
-} */ 
-
-/* Change background color of buttons on hover */
-/* .tab button:hover {
-    color: #9f3faf;
-} */
-
-/* Create an active/current tablink class */
-/* .tab button.active {
-    font-display: bold;
-    color: #9f3faf;
-} */
-
-/* Style the tab content */
-/* .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-    font-size: 8%;
-    padding-right: 20%;
-} */ 
 
 /**************
 Grid Formatting
