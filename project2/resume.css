@@ -65,13 +65,9 @@ p {
 .left{
     float: left;
     margin-left: 50px;
-    box-sizing: border-box;
 }
 
 .right{
     float: right;
-    margin-right: 40%;
-    margin-left: 60%;
-    padding-left: 50%;
-    box-sizing: border-box;
+    margin-right: 55%;
 }
