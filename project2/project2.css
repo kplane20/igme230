@@ -11,44 +11,70 @@ h3{
     padding-top:0;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+}
 
-.tab {
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    font-display: bold;
+    color: white;
+}
+
+/* .tab {
     overflow: hidden;
     font-size: 8%;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+/* .tab button {
     background-color: #ffffff;
     float: right;
     border: none;
     outline: none;
     /* cursor: pointer; */
-    padding: 14px 16px;
+    /* padding: 14px 16px;
     transition: 0.3s;
     font-size: 8%;
     padding-right: 20%;
-}
+} */ 
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+/* .tab button:hover {
     color: #9f3faf;
-}
+} */
 
 /* Create an active/current tablink class */
-.tab button.active {
+/* .tab button.active {
     font-display: bold;
     color: #9f3faf;
-}
+} */
 
 /* Style the tab content */
-.tabcontent {
+/* .tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
     font-size: 8%;
     padding-right: 20%;
-}
+} */ 
 
 /**************
 Grid Formatting
