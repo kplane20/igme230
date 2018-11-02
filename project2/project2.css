@@ -1,8 +1,11 @@
 
 header{
 font-family: 'Open Sans', sans-serif;
-padding-left: 2%;
+padding-top: 0px;
+padding-left: 20px;
+/* float: left; */
 font-size: .8em;
+/* float:left; */
 }
 
 h3{
@@ -14,14 +17,17 @@ h3{
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
+    width: 100%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+    font-family: 'Open Sans', sans-serif;
     float:right;
     color: #333;
+    margin-right: 0px;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 10px 10px;
     text-decoration: none;
     font-size: 17px;
 }
