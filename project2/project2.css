@@ -14,16 +14,15 @@ h3{
 
 .tab {
     overflow: hidden;
-    background-color: #ffffff;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    /* background-color: inherit; */
+    background-color: #ffffff;
     float: rightt;
     border: none;
     outline: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 14px 16px;
     transition: 0.3s;
 }
