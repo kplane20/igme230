@@ -48,7 +48,6 @@ header{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    font-display: bold;
     color: white;
 }
 
