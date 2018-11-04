@@ -20,6 +20,8 @@ header{
 
 }
 
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -110,9 +112,12 @@ p {
 .left{
     float: left;
     margin-left: 50px;
+    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 .right{
     float: right;
     margin-right: 55%;
 }
+
