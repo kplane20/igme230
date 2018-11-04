@@ -1,12 +1,57 @@
 
+@page {
+    size: A4;
+  }
+
 header{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 3%;
     padding-top: 3px;
 }
 
+.name{
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-display: bold;
+    color: #333;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    font-family: 'Open Sans', sans-serif;
+    float:right;
+    color: #333;
+    margin-right: 0px;
+    text-align: center;
+    padding: 0px 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    font-display: bold;
+    color: white;
+}
+
 main{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
 }
 
