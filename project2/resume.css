@@ -16,6 +16,8 @@ header{
     font-size: 26px;
     font-display: bold;
     color: #333;
+    text-decoration: none;
+
 }
 
 /* Add a black background color to the top navigation */
