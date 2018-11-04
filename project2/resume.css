@@ -80,7 +80,6 @@ h2{
     padding-bottom: 0;
     font-size: 1em;
 
-    
 }
 
 h3{
@@ -111,7 +110,7 @@ p {
 .left{
     float: left;
     margin-left: 50px;
-    padding-bottom: 50px;
+    
 }
 
 .right{
@@ -119,7 +118,7 @@ p {
     margin-right: 55%;
 }
 
-Style The Dropdown Button
+/* Style The Dropdown Button */
 .dropbtn {
     background-color: #ea7474;
     color: white;
