@@ -44,6 +44,10 @@ h3{
     color: white;
 }
 
+a:active{
+    color: "pink";
+    font-display: bold;
+}
 
 /**************
 Grid Formatting
@@ -52,10 +56,11 @@ Grid Formatting
 main{
     /* creates grid columns and resizes images to fill column */
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(530px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
     grid-gap:.1rem;
     /* provides space on either side */
     max-width: 95vw;
+
     margin: .5rem auto;
 }
 
