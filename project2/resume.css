@@ -1,4 +1,9 @@
 
+
+@page {
+    size: A4;
+  }
+
 header{
     font-family: 'Open Sans', sans-serif;
     margin: 3%;
