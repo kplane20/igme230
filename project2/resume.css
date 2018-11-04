@@ -112,7 +112,7 @@ p {
 .left{
     float: left;
     margin-left: 50px;
-    padding: 50px;
+    padding-bottom: 50px;
 }
 
 .right{
