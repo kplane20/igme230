@@ -1,5 +1,4 @@
 
-
 @page {
     size: A4;
   }
@@ -17,6 +16,7 @@ header{
     font-display: bold;
     color: #333;
     text-decoration: none;
+    overflow: hidden;
 
 }
 
