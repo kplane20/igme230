@@ -41,6 +41,7 @@ body{
 
 .links{
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .column {
@@ -50,6 +51,7 @@ body{
     padding-right: 150px;
     line-height: 1.5;
     box-sizing: border-box;
+    text-decoration: none;
 
 }
 
@@ -60,5 +62,6 @@ body{
     float:right;
     line-height: 1.5;
     box-sizing: border-box;
+    text-decoration: none;
    
 }
