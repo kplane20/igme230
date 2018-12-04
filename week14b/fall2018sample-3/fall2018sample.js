@@ -17,17 +17,28 @@ $(".menuitem1").click(function(){ //on click of my menu option
 //loading in the content, individual pages
 
 'use strict';
-let verse = ("content1.txt")  // sets default verse element
+let verse = ("content1.txt")  // sets default verse element
 
-$("#choose-content").val(verse); // changes menu option to default
-$("#content").load(verse);   // retrieves only default element
+$(".choose-content").val(verse); // changes menu option to default
+$("#content").load(verse);   // retrieves only default element
 
-$("#choose-content").change(function() { //on change, when a new menu item is selected do this
-verse = $("content1.txt").val(); //the verse which is my variable for the content information is set to the new value of the selected menu item.
+
+
+
+$("#choose-content").click(function() { //on change, when a new menu item is selected do this
+verse = ("content2.txt") //the verse which is my variable for the content information is set to the new value of the selected menu item.
+    
 $("#content").load(verse); //upload the new verse and replace the old one
 });
 
-$("#choose-contentn").change(function() { //on change, when a new menu item is selected do this
-    verse = $("content2.txt").val(); //the verse which is my variable for the content information is set to the new value of the selected menu item.
-    $("#content").load(verse); //upload the new verse and replace the old one
-    });
+
+
+
+$("#choose-contentn").click(function() { //on change, when a new menu item is selected do this
+verse = ("content1.txt") //the verse which is my variable for the content information is set to the new value of the selected menu item.
+    
+$("#content").load(verse); //upload the new verse and replace the old one
+});
+
+
+ console.log(verse);
