@@ -79,11 +79,35 @@ footer {
     grid-area: footer;
 }
 
+.menuitem {
+    background-color: white;
+    margin: 0;
+    border: solid 1px #b5e7a0;
+}
 
 .submenu{
     /* makes sure display of submenus is not showing */
     display:none;
 }
+
+.menuitem1 {
+    background-color: white;
+    margin: 0;
+    border: solid 1px #b5e7a0;
+}
+
+
+/*menu options*/
+
+.submenu1 {
+    /*    hide when page is loaded*/
+    display: none;
+    /*    no bullets*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 
 @media screen and (min-width: 760px){
     #wrapper{
