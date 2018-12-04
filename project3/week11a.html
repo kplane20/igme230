@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+    <style>
+
+        html, body{ margin:0; padding: 0; }
+
+        #container{
+            background-color: lavender;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #mygrid{
+            /* displays the grid */
+            display:grid;
+            /* determines how many rows and columns */
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* creates width and height using viewport width and height */
+            width: 90%;
+            height: 100vh;
+            max-width: 1000px;
+        }
+
+        #mygrid div{
+            display: flex;
+            /* displays the text in the center of the boxes */
+            justify-content: center;
+            align-items: center;
+            /* to see grid on layout */
+            background-color: pink;
+            border: 1px dotted;
+           
+        }
+
+        .headerbar{
+            grid-column: 1 / 4;
+        }
+
+    </style>
+
+
+</head>
+<body>
+        <div id="container"> 
+    <div id="mygrid">
+            <div class="headerbar">Cell 1</div>
+            <div>Cell 2</div>
+            <div>Cell 3</div>
+            <div>Cell 4</div>
+            <div>Cell 5</div>
+            <div>Cell 6</div>
+            <div>Cell 7</div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
