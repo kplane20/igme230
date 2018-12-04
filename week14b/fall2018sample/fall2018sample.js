@@ -6,7 +6,7 @@ $(".menuitem").click(function(){
         $(".submenu").slideToggle(500);
     });
 
-$(".menuitem1").click(function(){ //on click of my menu option
+    $(".menuitem1").click(function(){ //on click of my menu option
         $(".submenu1").slideToggle(500); //show or hide the submenu
     });
     
