@@ -1,0 +1,98 @@
+/*********************************
+General Formatting (Do Not Change)
+*********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+nav, aside {
+    background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+#wrapper{
+    /* mobile design- allows you to specify display order */
+    display: grid;
+    height: 100vh;
+    /* mobile order of the grid areas */
+    grid-template-areas: "header" "sidenav" "article" "sidebar" "footer"; 
+    grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
+
+}
+
+* {
+        box-sizing: border-box;
+    }
+
+
+
+
+/* assigns elements to specific grid locations */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: sidenav;
+}
+
+article {
+    grid-area: article;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.submenu{
+    /* makes sure display of submenus is not showing */
+    display:none;
+}
+
+@media screen and (min-width: 760px){
+    #wrapper{
+        /* redefining the grid by defining the rows and width of columns */
+        grid-template-areas: "header header header"  /* 1st row: header spans three columns  */
+        "sidebar article sidenav"  /* 2nd row: one element in each of 3 columns defines order of the grid areas on the page for desktop */
+        "footer footer footer"; /* 3rd row: footer spans three columns */
+        grid-template-rows: 1fr 10fr 1fr;   /* defines relative height of three rows */
+        grid-template-columns: 20% auto 20%;   /* adjust width of the grid areas -defines width of the three columns */
+    }
+}
+
