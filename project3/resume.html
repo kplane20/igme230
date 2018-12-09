@@ -6,14 +6,70 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="resume.css">
 
-<!--    <a href="https://kplane20.github.io/igme230/project2/project2.html#about"><h2 class="name">Kaitlin Plane<h2></a>-->
 
 </head>
 
-<style>@page {
+<style>
+    
+     
+        #mainmenu {
+            position: fixed;
+            width: 170px;
+            height: 200px;
+            z-index: 3;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 1.2em;
+            right: 30px;
+            top: 10px;
+            justify-content: left;
+            filter: drop-shadow(5px 0px 1px rgb(0, 0, 0, 0));
+            text-decoration: none;
+        }
+
+         ul{
+            list-style-type: none;
+              text-decoration: none;
+        }
+        
+         #togglemenu {
+            position: absolute;
+        }
+        
+        #ham {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #r1 {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #r2 {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #navpanel {
+            display: none;
+        }
+    
+    
+    
+    @page {
     size: A4;
   }
 
@@ -194,6 +250,36 @@ p {
                         585.469.3156<br />  </p>
         </div>
 
+         <div id="mainmenu">
+
+
+        <div id="togglemenu">
+
+            <div id="ham"></div>
+            <div id="r1"> </div>
+            <div id="r2"></div>
+        </div>
+
+        <div id="navpanel">
+
+            <ul>
+
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/work.html">Univ. News </a></li>
+
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/edge.html">On the Edge </a></li>
+
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/pills.html">Got Pills </a></li>
+
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/reporter.html">Reporter </a></li>
+                
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/p3.html">Home</a></li>
+                
+                <li><a class="nav" href="https://kplane20.github.io/igme230/project3/resume.html">Resume</a></li>
+
+<!--                <li><a id="pink" class="nav" href=""> Playground </a></li>-->
+            </ul>
+        </div>
+    </div>
 
 
         
@@ -203,6 +289,13 @@ p {
     <footer>
       
     </footer>
+    
+     <script>
+        $("#togglemenu").click(function() {            
+            $("#navpanel").slideToggle(400);        
+        });
+
+    </script>
 
 </body>
 
