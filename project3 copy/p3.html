@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+    <title>Project 3</title>
+
+    <style>
+        /* Menu*/
+        /*         menu title, click to hide menu */
+        /*    menu whole, containing all elements in the menu*/
+        
+        body{
+           font-family: 'Oswald', sans-serif;
+        }
+        
+        #mainmenu {
+            position: fixed;
+            width: 170px;
+            height: 200px;
+            z-index: 3;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 1.2em;
+            right: 30px;
+            top: 10px;
+            justify-content: left;
+            filter: drop-shadow(5px 0px 1px rgb(0, 0, 0, 0));
+        }
+
+         ul{
+            list-style-type: none;
+        }
+        
+         #togglemenu {
+            position: absolute;
+        }
+        
+        #ham {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #r1 {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #r2 {
+            width: 45px;
+            height: 5px;
+            background-color: #735787;
+            margin: 10px 120px;
+        }
+        
+        #navpanel {
+            display: none;
+        }
+        /*grid starts here*/
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            background-color: white;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #mygrid {
+            /* displays the grid */
+            display: grid;
+            /* determines how many rows and columns */
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: .2fr 1fr 1fr .2fr;
+            /* creates width and height using viewport width and height */
+            width: 100%;
+            height: 190vh;
+        }
+        
+        #mygrid div {
+            display: flex;
+            /* displays the text in the center of the boxes */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* to see grid on layout */
+/*            cf93a7*/
+        }
+        
+        #headerbar {
+            grid-column: 1 / 5;
+            /* size of header image area */
+            height: 90vh;
+        }
+        
+        .left {
+            grid-column: 2 / 3;
+            margin: 50px 10px 50px 10px;
+            height: 400px;
+            border-radius: 5px;
+        }
+        
+        .right {
+            margin: 10px;
+            margin: 50px 10px 50px 10px;
+            border-radius: 5px;
+        }
+        
+        .foot {
+            grid-column: 1 / 5;
+            height: 20vh;
+/*            background-color: #cf93a7;*/
+        }
+        
+        .me {
+            width: 100%;
+        }
+        
+        .news {
+            /* height: 50vh; */
+            width: 102%;
+        }
+        
+        .edge {
+/*             height: 50vh; */
+            width: 100%;
+        }
+        
+        .pills {
+            /* height: 50vh; */
+            width: 128%;
+        }
+        
+        .reporter {
+            /* height: 50vh; */
+            width: 115%;
+        }
+        
+        .name {
+            position: absolute;
+            font-weight: 800;
+            font-size: 4em;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            padding-top: 230px;
+            /* right: 200px; */
+            top: 10px;
+        }
+        /* MEDIA QUERY*/
+        
+        @media (max-width: 400px) {
+            #mygrid {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: .2fr 1fr 1fr 1fr .2fr;
+                width: 100%;
+                height: 200vh;
+            }
+            .left {
+                grid-column: 1 / 5;
+                height: 50vh;
+                margin: 0;
+                border-radius: 2px;
+            }
+            .right {
+                grid-column: 1 / 5;
+                margin: 0;
+                height: 50vh;
+                border-radius: 2px;
+            }
+            #headerbar {
+                grid-column: 1 / 5;
+                /* size of header image area */
+                height: 50vh;
+            }
+            .name {
+                justify-content: center;
+                align-items: center;
+                padding-top: 80px;
+                font-size: 2em;
+            }
+            .me {
+                height: 100%;
+                width: auto;
+            }
+            
+            .news {
+            /* height: 50vh; */
+            width: 102%;
+        }
+        
+        .edge {
+            /* height: 50vh; */
+            width: 100%;
+        }
+        
+        .pills {
+            /* height: 50vh; */
+            width: 128%;
+        }
+        
+        .reporter {
+            /* height: 50vh; */
+            width: 115%;
+        }
+        
+        .name {
+            position: absolute;
+            font-weight: 800;
+            font-size: 4em;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            padding-top: 230px;
+            /* right: 200px; */
+            top: 10px;
+        }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div id="mainmenu">
+
+
+        <div id="togglemenu">
+
+            <div id="ham"></div>
+            <div id="r1"> </div>
+            <div id="r2"></div>
+        </div>
+
+        <div id="navpanel">
+
+            <ul>
+
+                <li><a class="nav" href=""> News </a></li>
+
+                <li><a class="nav" href=""> Edge </a></li>
+
+                <li><a class="nav" href=""> Pills </a></li>
+
+                <li><a class="nav" href=""> Reporter </a></li>
+
+                <li><a id="pink" class="nav" href=""> Playground </a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="container">
+        <div id="mygrid">
+
+
+            <div id="headerbar">
+
+                <h1 class="name">KAITLIN PLANE</h1>
+<!--                <h1 class="name">Kaitlin Plane</h1>-->
+                <!-- <img class="me" src="images/nyc.jpg"> -->
+                <img class="me" src="images/toronto copy.JPG">
+            </div>
+            <div class="left">
+                <img class="news" src="images/news2.png">
+            </div>
+            <div class="right"> 
+               
+                <img class="edge" img src="images/edge1.png"> 
+<!--                <a href=""><img src="images/edge2.png"></a>-->
+
+            </div>
+            <div class="left">
+                <img class="pills" src="images/pills2.png">
+            </div>
+            <div class="right">
+                <img class="reporter" src="images/reporter2.png">
+            </div>
+            <div class="foot">Cell 6</div>
+            <!-- <div class="right">Cell 7</div>
+            <div class="left">Cell 8</div> -->
+        </div>
+
+    </div>
+
+    <script>
+        $("#togglemenu").click(function() {            
+            $("#navpanel").slideToggle(400);        
+        });
+
+    </script>
+
+
+</body>
+
+</html>

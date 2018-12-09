@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Grid</title>
+
+    <style>
+        /* Menu*/
+        /*         menu title, click to hide menu */
+        
+        
+       
+        /*    menu whole, containing all elements in the menu*/
+        
+        #mainmenu {
+            position: fixed;
+            width: 170px;
+            height: 200px;
+            z-index: 3;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 1.2em;
+            right: 30px;
+            top: 10px;
+            justify-content: left;
+            filter: drop-shadow(5px 0px 1px rgb(0, 0, 0, 0));
+        }
+
+         ul{
+            list-style-type: none;
+        }
+        
+         #togglemenu {
+            position: absolute;
+        }
+        
+        #ham {
+            
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 120px;
+        }
+        
+        #r1 {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 120px;
+        }
+        
+        #r2 {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 120px;
+        }
+
+
+
+     
+        /*        grid starts here*/
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            background-color: white;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #mygrid {
+            /* displays the grid */
+            display: grid;
+            /* determines how many rows and columns */
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: .5fr 1fr 1fr .5fr;
+            /* creates width and height using viewport width and height */
+            width: 100%;
+            height: 200vh;
+        }
+        
+        #mygrid div {
+            display: flex;
+            /* displays the text in the center of the boxes */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* to see grid on layout */
+            background-color: pink;
+            border: 1px dotted;
+        }
+        
+        #headerbar {
+            grid-column: 1 / 5;
+            height: 80vh;
+        }
+        
+        .left {
+            grid-column: 2 / 3;
+            margin: 50px 10px 50px 10px;
+            height: 50vh;
+        }
+        
+        .right {
+            margin: 10px;
+            margin: 50px 10px 50px 10px;
+        }
+        
+        .foot {
+            grid-column: 1 / 5;
+            height: 20vh;
+        }
+        
+        .news {
+            /* height: 50vh; */
+            width: 95%;
+        }
+        
+       
+
+    </style>
+
+
+</head>
+
+<body>
+    <div id="mainmenu">
+
+    
+        <div  id="togglemenu">
+            
+             <div id="ham"></div>
+                <div id="r1"> </div>
+                <div id="r2"></div>
+        </div>
+    
+        <div id="navpanel">
+        
+            <ul>
+            
+                <li><a class="nav" href=""> Edge </a></li>
+            
+                <li><a class="nav" href=""> Jellyfish </a></li>
+            
+                <li><a class="nav" href=""> Square </a></li>
+            
+                <li><a class="nav" href=""> Onion </a></li>
+            
+                <li><a id="pink" class="nav" href=""> Playground </a></li>
+            
+            </ul>
+            </div>
+        </div>
+
+
+
+    <div id="container">
+        <div id="mygrid">
+            <div id="headerbar">
+            </div>
+            <div class="left">
+                <img class="news" src="images/news2.png">
+            </div>
+            <div class="right">Cell 3</div>
+            <div class="left">Cell 4</div>
+            <div class="right">Cell 5</div>
+            <div class="foot">Cell 6</div>
+            <!-- <div class="right">Cell 7</div>
+            <div class="left">Cell 8</div> -->
+        </div>
+
+    </div>
+
+     <script>
+        $("#togglemenu").click(function() {
+            $("#navpanel").slideToggle(400);
+        });
+    </script>
+
+    
+</body>
+
+</html>
