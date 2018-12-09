@@ -11,13 +11,9 @@
     <title>University News</title>
 
     <style>
-       
-        
-         body{
-           font-family: 'Oswald', sans-serif;
+    body {
+            font-family: 'Oswald', sans-serif;
         }
-        
-       
         /*    menu whole, containing all elements in the menu*/
         
         #mainmenu {
@@ -34,23 +30,23 @@
             justify-content: left;
             filter: drop-shadow(5px 0px 1px rgb(0, 0, 0, 0));
         }
-
-         ul{
+        
+        ul {
             list-style-type: none;
         }
         
-         #togglemenu {
-            position: absolute;
-        }
+        #togglemenu {
+            position: absolute;
+        }
         
-         #ham {
+        #ham {
             width: 45px;
             height: 5px;
             background-color: #735787;
             margin: 10px 120px;
         }
         
-          #r1 {
+        #r1 {
             width: 45px;
             height: 5px;
             background-color: #735787;
@@ -63,12 +59,10 @@
             background-color: #735787;
             margin: 10px 120px;
         }
-
-         
+        
         #navpanel {
             display: none;
         }
-     
         /*        grid starts here*/
         
         html,
@@ -103,22 +97,21 @@
             align-items: center;
             overflow: hidden;
             /* to see grid on layout */
-            background-color: pink;
-            border: 1px dotted;
+/*            background-color: pink;*/
+/*            border: 1px dotted;*/
         }
         
-         #headerbar {
+        #headerbar {
             grid-column: 1 / 5;
             height: 80vh;
             margin: 0;
         }
-
+        
         .left {
             grid-column: 1 / 3;
             margin: 50px 0px 50px 20px;
             height: 50vh;
             margin-left: 100px;
-           
         }
         
         .right {
@@ -126,76 +119,145 @@
             margin: 50px 10px 50px 50px;
         }
         
+        .sketches {
+            /* height: 50vh; */
+            width: 120%;
+        }
+        
+        .edge {
+            /*             height: 50vh; */
+            width: 100%;
+        }
+        
+        .pills {
+            /* height: 50vh; */
+            width: 128%;
+        }
+        
+        .reporter {
+            /* height: 50vh; */
+            width: 115%;
+        }
+        
         .foot {
             grid-column: 1 / 5;
             height: 20vh;
         }
         
-        .sketches {
+        .sketch {
             /* height: 50vh; */
-            width: 95%;
+            width: 125%;
         }
         
-         .project {
-                height: 145%;
-                width: auto;
-            }
-        
+        .project {
+            height: 145%;
+            width: auto;
+        }
         
         .pname {
             position: absolute;
-            font-weight: 800;
+            font-weight: 600;
             font-size: 3em;
-            color: white;
             justify-content: left;
             align-items: left;
-            padding-top: 500px;
-            padding-right: 600px; 
+            padding-top: 400px;
+            padding-right: 600px;
+            color: #f78c63;
+        }
+        
+/*
+        .title {
+            font-weight: 100;
+            font-size: 2em;
+            color: white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding-top: 0px;
+            
+        }
+*/
+        .title{
+            position: absolute;
+            font-weight: 400;
+            font-size: 2em;
+            justify-content: flex-start
+            align-items: flex-start;
+            margin: 0;
+            padding-right: 220px;
+            color: #f78c63;
+        }
+        
+        p{
+            display:flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #333;
+            padding-top: 220px;
+            margin-right: 0px;
+        }
+    }
+    /* MEDIA QUERY*/
+    @media (max-width: 400px) {
+        #mygrid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: .2fr 1fr 1fr 1fr .2fr;
+            width: 100%;
+            height: 200vh;
+        }
+        
+        .left {
+            grid-column: 1 / 5;
+            height: 50vh;
+            margin: 0;
+            border-radius: 2px;
+        }
+        
+        .right {
+            grid-column: 1 / 5;
+            margin: 0;
+            height: 50vh;
+            border-radius: 2px;
+        }
+        
+        #headerbar {
+            grid-column: 1 / 5;
+            /* size of header image area */
+            height: 50vh;
+        }
+        
+        .pname {
+            justify-content: center;
+            align-items: center;
+            padding-top: 80px;
+            font-size: 2em;
+        }
+
+        
+        .title{
+            position: absolute;
+            font-weight: 400;
+            font-size: 2em;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding-right: 220px;
+            color: #f78c63;
+        }
+        
+        p{
+            display:flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: #333;
+            padding-top: 220px;
+            margin-right: 0px;
+            
            
         }
         
-        }
-        
-         /* MEDIA QUERY*/
-        
-        @media (max-width: 400px) {
-            #mygrid {
-                display: grid;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-columns: .2fr 1fr 1fr 1fr .2fr;
-                width: 100%;
-                height: 200vh;
-            }
-            .left {
-                grid-column: 1 / 5;
-                height: 50vh;
-                margin: 0;
-                border-radius: 2px;
-            }
-            .right {
-                grid-column: 1 / 5;
-                margin: 0;
-                height: 50vh;
-                border-radius: 2px;
-            }
-            #headerbar {
-                grid-column: 1 / 5;
-                /* size of header image area */
-                height: 50vh;
-            }
-            .pname {
-                justify-content: center;
-                align-items: center;
-                padding-top: 80px;
-                font-size: 2em;
-            }
-            .me {
-                height: 100%;
-                width: auto;
-            }
-        }
-       
-
     </style>
 
 
@@ -204,56 +266,60 @@
 <body>
     <div id="mainmenu">
 
-    
-        <div  id="togglemenu">
-            
-             <div id="ham"></div>
-                <div id="r1"> </div>
-                <div id="r2"></div>
+
+        <div id="togglemenu">
+
+            <div id="ham"></div>
+            <div id="r1"> </div>
+            <div id="r2"></div>
         </div>
-    
+
         <div id="navpanel">
-        
+
             <ul>
-            
+
                 <li><a class="nav" href=""> Edge </a></li>
-            
+
                 <li><a class="nav" href=""> Jellyfish </a></li>
-            
+
                 <li><a class="nav" href=""> Square </a></li>
-            
+
                 <li><a class="nav" href=""> Onion </a></li>
-            
+
                 <li><a id="pink" class="nav" href=""> Playground </a></li>
-            
+
             </ul>
-            </div>
         </div>
+    </div>
 
 
 
     <div id="container">
         <div id="mygrid">
             <div id="headerbar">
-                 <h1 class="pname">UNIVERISTY NEWS</h1>
-<!--                <h1 class="name">Kaitlin Plane</h1>-->
+                <h1 class="pname">UNIVERISTY NEWS</h1>
+                <!--                <h1 class="name">Kaitlin Plane</h1>-->
                 <!-- <img class="me" src="images/nyc.jpg"> -->
-                <img class="project" src="images/news2.png">
-            </div>
-            <div class="left">
-                 <img class="sketches" src="images/reporter/sketches.jpeg">
+                <img class="project" src="images/ritnews/newsMock.png">
             </div>
             
-            <div class="right"> 
-               
+            
+            <div class="left">
+                <img class="sketch" src="images/ritnews/sketch1.png">
+            </div>
+
+            <div class="right">
+               <h2 class="title">Sketches</h2>
+                <p>
+                Finding the best way to utilize the space on the page more effectively, introduce new colors and remove the current clutter the current site posseses. By doing so I planned to make the experience better and easier for the user while also giving it a new clean look with a professional feel</p>
 
             </div>
-            
+
             <div class="left">
-<!--                <img class="news" src="images/news2.png">-->
+                <!--                <img class="news" src="images/news2.png">-->
             </div>
-            <div class="right"> 
-               
+            <div class="right">
+
                 <img class="edge" img src="images/edge1.png">
 
             </div>
@@ -270,13 +336,13 @@
 
     </div>
 
-     <script>
-        $("#togglemenu").click(function() {
-            $("#navpanel").slideToggle(400);
-        });
-    </script>
+    <script>
+        $("#togglemenu").click(function() {            
+            $("#navpanel").slideToggle(400);        
+        });
+    </script>
 
-    
+
 </body>
 
 </html>
