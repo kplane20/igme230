@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
     <title>University News</title>
 
     <style>
-        /* Menu*/
-        /*         menu title, click to hide menu */
+       
         
+         body{
+           font-family: 'Oswald', sans-serif;
+        }
         
        
         /*    menu whole, containing all elements in the menu*/
@@ -39,30 +43,31 @@
             position: absolute;
         }
         
-        #ham {
-            
-            width: 35px;
+         #ham {
+            width: 45px;
             height: 5px;
-            background-color: black;
-            margin: 6px 120px;
+            background-color: #735787;
+            margin: 10px 120px;
         }
         
-        #r1 {
-            width: 35px;
+          #r1 {
+            width: 45px;
             height: 5px;
-            background-color: black;
-            margin: 6px 120px;
+            background-color: #735787;
+            margin: 10px 120px;
         }
         
         #r2 {
-            width: 35px;
+            width: 45px;
             height: 5px;
-            background-color: black;
-            margin: 6px 120px;
+            background-color: #735787;
+            margin: 10px 120px;
         }
 
-
-
+         
+        #navpanel {
+            display: none;
+        }
      
         /*        grid starts here*/
         
@@ -131,7 +136,25 @@
             width: 95%;
         }
         
+         .project {
+                height: 145%;
+                width: auto;
+            }
         
+        
+        .pname {
+            position: absolute;
+            font-weight: 800;
+            font-size: 3em;
+            color: white;
+            justify-content: left;
+            align-items: left;
+            padding-top: 500px;
+            padding-right: 600px; 
+           
+        }
+        
+        }
         
          /* MEDIA QUERY*/
         
@@ -160,7 +183,7 @@
                 /* size of header image area */
                 height: 50vh;
             }
-            .name {
+            .pname {
                 justify-content: center;
                 align-items: center;
                 padding-top: 80px;
@@ -212,21 +235,35 @@
     <div id="container">
         <div id="mygrid">
             <div id="headerbar">
+                 <h1 class="pname">UNIVERISTY NEWS</h1>
+<!--                <h1 class="name">Kaitlin Plane</h1>-->
+                <!-- <img class="me" src="images/nyc.jpg"> -->
+                <img class="project" src="images/news2.png">
             </div>
             <div class="left">
-                
+                 <img class="news" src="images/news2.png">
             </div>
-            <div class="right">Cell 3</div>
-            <div class="left">Cell 4</div>
-            <div class="right">Cell 5</div>
-            <div class="left">Cell 4</div>
-            <div class="right">Cell 5</div>
-             <div class="left">Cell 4</div>
-            <div class="right">Cell 5</div>
-             <div class="left">Cell 4</div>
-            <div class="right">Cell 5</div>
-            <div class="foot">Cell 6</div>
+            
+            <div class="right"> 
+               
 
+            </div>
+            
+            <div class="left">
+<!--                <img class="news" src="images/news2.png">-->
+            </div>
+            <div class="right"> 
+               
+                <img class="edge" img src="images/edge1.png">
+
+            </div>
+            <div class="left">
+                <img class="pills" src="images/pills2.png">
+            </div>
+            <div class="right">
+                <img class="reporter" src="images/reporter2.png">
+            </div>
+            <div class="foot">Cell 6</div>
             <!-- <div class="right">Cell 7</div>
             <div class="left">Cell 8</div> -->
         </div>
