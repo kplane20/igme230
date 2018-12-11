@@ -4,7 +4,6 @@ $(".menu").click(function(){ //on click of my menu option
     $(this).next(".items").slideToggle(500); //show or hide the submenu
 });
 
-//items is the sub menu
 //this. next means this menu get these things- sub menu items (.items)
 //this.next does just the menu you click on
 
