@@ -43,7 +43,6 @@ $("#clickme").click(function(){ //on click of my menu option
 });
 
 //this only works because you edited the html so ask about this 
-let count = 0;
 $("#clickme2").click(function(){ //on click of my menu option
     count= count - 1; //count++;
 //    decreases by one so to decrease by 1 use count-1
