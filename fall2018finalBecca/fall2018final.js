@@ -23,8 +23,10 @@ $("input[name='article']").click(function(){
      let variable= $(this).val();
 //    let article= $(this).val();
     //article in this case is not the same as the other one-use different name
+//    this targets individual item being clicked then gets the value with val
 
     $("article").load(variable);
+//    gets the article and then loads it
 });
 
 
@@ -35,8 +37,16 @@ $("input[name='article']").click(function(){
 let count = 0;
 $("#clickme").click(function(){ //on click of my menu option
     count= count + 1; //count++;
+//    increases by one so to decrease by 1 use count-1
     $("#clickcount").html(count);
    
 });
 
-//this
+//this only works because you edited the html so ask about this 
+let count = 0;
+$("#clickme2").click(function(){ //on click of my menu option
+    count= count - 1; //count++;
+//    decreases by one so to decrease by 1 use count-1
+    $("#clickcount").html(count);
+   
+});
