@@ -28,9 +28,8 @@ $(".menu").click(function() {
 });
 
 
-// article/story 
-//loadds the fileinto article section on the grid
-$("story").load("story0.txt");
+//article load
+$("ar").load("story0.txt");
 
 // $("input[name='content']").click(function(){
 
