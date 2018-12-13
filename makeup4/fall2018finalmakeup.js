@@ -28,8 +28,10 @@ $(".menu").click(function() {
 });
 
 
-//article load
-$("ar").load("story0.txt");
+
+
+// this should be working to load article
+$("#story").load("story0.txt");
 
 // $("input[name='content']").click(function(){
 
@@ -37,4 +39,19 @@ $("ar").load("story0.txt");
 
 //     $("story").load(newarticle);
 // });
+
+
+$("#story0.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
+$("#story").load("story0.txt"); //upload the new story and replace the old one
+});
+
+
+$("#story1.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
+$("#story").load("story1.txt"); //upload the new verse and replace the old one
+});
+
+$("#story2.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
+$("#story").load("story2.txt"); //upload the new verse and replace the old one
+});
+
 
