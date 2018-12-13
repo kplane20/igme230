@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkgreen;
+}
+
+header,
+footer {
+    background-color: #86af49;
+}
+
+
+aside,
+article {
+    padding: .5rem;
+}
+
+
+aside {
+    background-color: #b5e7a0;
+}
+
+
+/**************
+Your Formatting
+***************/
+
+.menu {
+    text-align: center;
+    width: 120px;
+    background-color: #ccc;
+    margin: 0px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    
+}
+
+.items {
+    width: 120px;
+    text-align: center;
+    display: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #86af49;
+    position: absolute;
+
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86af49;
+}
+nav {
+    display: grid;
+    grid-template-columns: 100px;
+    min-width: 120px;
+    min-height: 200px;
+    max-height: 90vh;
+    overflow: scroll;
+    border: 1px solid purple;
+    margin-bottom: 2em;
+    background-color: lavender;
+    position: fixed;
+    left: -100px;
+    z-index: 2;
+}
+
+
+
+/*****************
+Grid Formatting  
+*****************/
+
+
+/*mobile*/
+
+#yourgrid {
+    display: grid;
+    height: 100vw;
+    grid-template-areas: "header""sidenav""article""sidebar""footer";
+    grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+    height: 75px;
+    background-color: lightpink;
+}
+
+article {
+    grid-area: article;
+    height: auto;
+    background-color: lightcyan;
+}
+
+aside {
+    grid-area: sidebar;
+    height: auto;
+    background-color: #e5c9f2;
+}
+
+footer {
+    grid-area: footer;
+    height: 30px;
+    background-color: lightpink;
+}
+
+
+/* desktop*/
+
+@media screen and (min-width: 760px) {
+    #yourgrid {
+/*
+        grid-template-areas: "header header "
+        " article  sidebar " "footer footer";
+*/
+        
+        
+        grid-template-rows: 75px 30px 1fr 1fr 50px;
+        grid-template-columns: 1fr 2fr;
+        
+        
+/*
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+        grid-template-columns: 1fr 1fr;
+*/
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        min-height: 100vh;
+        background-color: lightblue;
+    }
+    
+    footer {
+/*        grid-area: footer;*/
+        height: 50px;
+        background-color: lightpink;
+         grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+
+    aside {
+
+        height: auto;
+        background-color: lightblue;
+        margin-top: 40px;
+        
+         grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    header {
+        background-color: lightpink;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    article {
+        background-color: lightcyan;
+        grid-row: 2/5;
+    }
+
+}
+
+
+
