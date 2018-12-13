@@ -5,17 +5,19 @@ $(".mainmenu").click(function() {
 });
 
 
+
+
 // radio button code
 
 
 //loadds the fileinto article section on the grid
-// $("mainmenu").load(".submenu");
+$("article").load(".content");
 
 $("input[name='content']").click(function(){
 
     let showmenu= this.value;
 
-    $("mainmenu").load(showmenu);
+    $("article").load(showmenu);
 });
 
 //loadds the fileinto article section on the grid
@@ -58,6 +60,17 @@ $("li").hover(function(){
     $(this).css("background-color", "#86af49");  
 });
 
+
+
+//extracredit
+//to decrease count = count - 1
+//doing this with buttons on two diffrent names, is there a way to do it when button is the same name 
+let count = 0;
+$("#clickme").click(function(){ //on click of my menu option
+    count= count + 1; //count++;
+    $("#count").html(count);
+   
+});
 
 
 
