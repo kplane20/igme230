@@ -1,5 +1,5 @@
 
-$("article").load("article0.txt"); //loads as defult
+$("article").load("article0.txt"); //loads as default
 
 $("#test1").click(function() { //when you click the list item with the id "test1" perform this function
 $("article").load("article1.txt"); //upload the new verse and replace the old one
