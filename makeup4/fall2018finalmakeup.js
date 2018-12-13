@@ -42,16 +42,25 @@ $("#story").load("story0.txt");
 
 
 $("#story0.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
-$("#story").load("story0.txt"); //upload the new story and replace the old one
+$("#story").load("#story0.txt"); //upload the new story and replace the old one
 });
 
 
 $("#story1.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
-$("#story").load("story1.txt"); //upload the new verse and replace the old one
+$("#story").load("#story1.txt"); //upload the new verse and replace the old one
 });
 
 $("#story2.txt").click(function() { //when you click the list item with the id "story1.txt" perform this function
-$("#story").load("story2.txt"); //upload the new verse and replace the old one
+$("#story").load("#story2.txt"); //upload the new verse and replace the old one
+});
+
+//source color change attempt
+$("document").ready(function(){
+       $('#source').each(function() {
+    $(this).css("background-color", randomColor()); 
+       }),
+ function(){
+    $(this).css("background-color", randomColor());  
 });
 
 
