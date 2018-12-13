@@ -9,8 +9,7 @@ $(".mainmenu").click(function() {
 
 // radio button code
 
-
-//loadds the fileinto article section on the grid
+//loads the fileinto article section on the grid
 $("article").load(".content");
 
 $("input[name='content']").click(function(){
@@ -35,7 +34,7 @@ $("input[name='content']").click(function(){
 //menu option
 
 
-//shows and hides nav
+//shows and hides nav- works in mackenzies final exercise using butots
 $("#hide").click(function () {
     $("nav").animate({ left: '-100' }, "slow");
 
